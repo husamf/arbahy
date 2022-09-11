@@ -1,0 +1,652 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>arbahy</title>
+    <link rel="icon" href="img/png2.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--icon-->
+    <script src="js/countup.js"></script>
+    <script src="js/rtl/bootstrap.min.js"></script>
+    <script src="js/rtl/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- <link href="css/bootstrap-rtl.css" rel="stylesheet" /> -->
+    <link href="css/rtl/bootstrap-rtl.min.css" rel="stylesheet" />
+
+    <script>
+        window.addEventListener("load", function() {
+            var load_screen = document.getElementById("load_screen");
+            document.body.removeChild(load_screen);
+            $("html").css({
+                'overflow': 'auto'
+            });
+        });
+    </script>
+    <link href="css/animate.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body id="go-up">
+    <a href="#go-up" class="fa-go-up" id="fa-go-up">
+        <span class="fa fa-angle-up fa-go-up-span">
+
+        </span>
+    </a>
+
+
+    <div id="load_screen">
+        <div class="loader"></div>
+    </div>
+
+
+    <nav class="navbar pd-0 navbar-light navbar-expand-md bg-light justify-content-center">
+
+        <button class="navbar-toggler ml-1 collapse-mobile custom-toggler order-1 click-oncollapse" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
+                                <!-- <span class="navbar-toggler-icon"></span> -->
+                                <span class="navbar-toggler-icon-border span1-oncollapse"></span>
+                                <span class="navbar-toggler-icon-border"></span>
+                                <span class="navbar-toggler-icon-border span3-oncollapse"></span>
+                            </button>
+
+        <ul class="nav navbar-nav flex-row justify-content-center flex-nowrap order-2 ul-logo">
+            <li class="nav-item">
+                <a class="nav-link" href=""><img src="img/logo.png" alt="website logo" class="logo-site" width="auto" height="auto" /></a>
+            </li>
+        </ul>
+
+        <div class="navbar-collapse collapse justify-content-between align-items-center w-100  order-3 for-order-3" id="collapsingNavbar2">
+
+            <ul class="navbar-nav mx-auto text-center">
+
+                <li class="nav-item">
+                    <a class="nav-link hoverme" href="index.html">الرئيسية</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutus.html">من نحن</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          المساعدة
+                                        </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">عن الموقع</a>
+                        <a class="dropdown-item" href="#">استخدام الموقع</a>
+                        <!-- <div class="dropdown-divider"></div> -->
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">حسابي</a>
+                </li>
+
+
+
+            </ul>
+        </div>
+
+        <div class="order-4 for-order-4 dis-pc-inh user-log-in">
+            <span class="span-language">AR
+                            <span class="arrow-left display-none"></span>
+            <span class="languages display-none"><span class="disabled">AR</span>|<a>EN</a></span>
+            </span>
+            <button class="btn btn-new-account new-account-header">حساب جديد</button>
+            <button class="btn  btn-new-login btn-new-login-header" onclick="togglelogin()">تسجيل الدخول</button>
+
+        </div>
+        <div class="order-4 for-order-4 dis-pc-inh display-none dashboard-user-header fff-color user-log-out">
+            <span class="span-language">AR
+                            <span class="arrow-left display-none"></span>
+            <span class="languages display-none"><span class="disabled">AR</span>|<a>EN</a></span>
+            </span>
+            <div class="container-fluid">
+                <span class="fa fa-user user-icon"></span>
+                <span class="user-name">ABC EFG</span>
+                <span class="fa fa-cog sttings">
+                        <span class="arrow-logout display-none"></span>
+                <a class="logout display-none">logOut</a>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+
+    <section class="section-plan">
+        <br />
+        <br />
+        <br />
+        <p class="text-center fff-color">إختر الخطة التي تناسبك</p>
+
+        <div class="container-fluid">
+            <div class="row">
+                <form class="width-100">
+                    <ul>
+                        <li class="btn-pay-paypal">
+                            <input type="radio" id="a1-option" name="selector">
+                            <label for="a1-option" class="btn-choose-plan btn-choose-plan1">
+                                            <div class="row mar-bot-10 row-choose-plan row-choose-plan1">
+                                                <div class="col-sm-4 col-mobile-4"></div>
+                                                <div class="col-sm-4 col-mobile-4 text-center">
+                                                    المبلغ المنفق(دولار)
+                                                </div>
+                                                <div class="col-sm-4 col-mobile-4 text-left">
+                                                    تذكرة ربح سيارة
+                                                </div>
+                                            </div>
+                                        
+                                            <div class="row mar-bot-10 row-descrption-plan row-choose-plan row-choose-plan1">
+                                                    <div class="col-sm-4 col-mobile-4"></div>
+                                                    <div class="col-sm-4 text-center">
+                                                       5$
+                                                    </div>
+                                                    <div class="col-sm-4 col-mobile-4 text-left">
+                                                  سعر التذكرة
+                                                    </div>
+                                                </div>
+                                        
+                            </label>
+                            <a href="#id-go-to-pay"><button class="btn btn-go-down-topay">أكمل الدفع</button></a>
+
+                        </li>
+                        <li class="btn-pay-paypal">
+                            <input type="radio" id="a2-option" name="selector">
+                            <label for="a2-option" class="btn-choose-plan btn-choose-plan2">
+                                        <div class="row mar-bot-10 row-choose-plan row-choose-plan row-choose-plan2">
+                                            <div class="col-sm-4 col-mobile-4"></div>
+                                            <div class="col-sm-4 col-mobile-4 text-center">
+                                                المبلغ المنفق(دولار)
+                                            </div>
+                                            <div class="col-sm-4 col-mobile-4 text-left">
+                                                تذكرة ربح جوال <span class="font-myriad"> iphone x </span>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="row mar-bot-10 row-descrption-plan row-choose-plan row-choose-plan2">
+                                                <div class="col-sm-4 col-mobile-4"></div>
+                                                <div class="col-sm-4 col-mobile-4 text-center">
+                                                   2.5$
+                                                </div>
+                                                <div class="col-sm-4 col-mobile-4 text-left">
+                                              سعر التذكرة
+                                                </div>
+                                            </div>
+                                            
+                                </label>
+                            <a href="#id-go-to-pay"><button class="btn btn-go-down-topay">أكمل الدفع</button></a>
+
+                        </li>
+                        <li class="btn-pay-paypal">
+                            <input type="radio" id="a3-option" name="selector">
+                            <label for="a3-option" class="btn-choose-plan btn-choose-plan3">
+                                    <div class="row mar-bot-10 row-choose-plan row-choose-plan row-choose-plan3">
+                                        <div class="col-sm-4 col-mobile-4"></div>
+                                        <div class="col-sm-4 col-mobile-4 text-center">
+                                            المبلغ المنفق(دولار)
+                                        </div>
+                                        <div class="col-sm-4 col-mobile-4 text-left">
+                                            تذكرة ربح جوال <span class="font-myriad">shawmi</span>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="row mar-bot-10 row-descrption-plan row-choose-plan row-choose-plan3">
+                                            <div class="col-sm-4 col-mobile-4"></div>
+                                            <div class="col-sm-4 col-mobile-4 text-center">
+                                               2$
+                                            </div>
+                                            <div class="col-sm-4 col-mobile-4 text-left">
+                                          سعر التذكرة
+                                            </div>
+                                        </div>
+                                                
+                                    </label>
+                            <a href="#id-go-to-pay"><button class="btn btn-go-down-topay">أكمل الدفع</button></a>
+
+                        </li>
+
+                        <li class="btn-pay-paypal">
+                            <p class="text-center fff-color w-100">
+
+                                <br /> <br /> كل يوم 1.00%
+
+                            </p>
+                            <input type="radio" id="a4-option" name="selector">
+                            <label for="a4-option" class="btn-choose-plan btn-choose-plan4">
+                                    <div class="row mar-bot-10 row-choose-plan row-choose-plan4">
+                        
+                                        <div class="col-sm-4 col-mobile-4 text-right">الأرباح باليوم (%)</div>
+                                        <div class="col-sm-4 col-mobile-4 text-center">
+                                            المبلغ المنفق(دولار)
+                                        </div>
+                                        <div class="col-sm-4 col-mobile-4 text-left">
+                        الخطة أ                    </div>
+                        
+                        </div>
+                        <div class="row row-choose-plan row-choose-plan4">
+                                <div class="col-sm-4 col-mobile-4 text-right">0.20</div>
+                                <div class="col-sm-4 col-mobile-4 text-center">
+                           $1000.00 - $5.00
+                                </div>
+                                <div class="col-sm-4 col-mobile-4 text-left">
+                               الخطة 1
+                                </div>
+                            </div>
+                            <div class="row row-choose-plan row-choose-plan4">
+                                    <div class="col-sm-4 col-mobile-4 text-right">0.70</div>
+                                    <div class="col-sm-4 col-mobile-4 text-center">
+                               $3000.00 - $1001.00
+                                    </div>
+                                    <div class="col-sm-4 col-mobile-4 text-left">
+                                   الخطة 2
+                                    </div>
+                                </div>
+                                <div class="row row-choose-plan row-choose-plan4">
+                                        <div class="col-sm-4 col-mobile-4 text-right">1.00</div>
+                                        <div class="col-sm-4 col-mobile-4 text-center">
+                                   $5000.00 - $3001.00
+                                        </div>
+                                        <div class="col-sm-4 col-mobile-4 text-left">
+                                       الخطة 3
+                                        </div>
+                                    </div>
+                                                    
+                                        </label>
+                            <a href="#id-go-to-pay"><button class="btn btn-go-down-topay">أكمل الدفع</button></a>
+
+                        </li>
+
+                        <li class="btn-pay-paypal">
+                            <p class="text-center fff-color w-100">
+
+                                <br /> <br /> كل يوم 1.50%
+
+                            </p>
+                            <input type="radio" id="a5-option" name="selector">
+                            <label for="a5-option" class="btn-choose-plan btn-choose-plan5">
+                                    <div class="row mar-bot-10 row-choose-plan row-choose-plan row-choose-plan5">
+                    
+                                            <div class="col-sm-4 col-mobile-4 text-right">الأرباح باليوم (%)</div>
+                                            <div class="col-sm-4 col-mobile-4 text-center">
+                                                المبلغ المنفق(دولار)
+                                            </div>
+                                            <div class="col-sm-4 col-mobile-4 text-left">
+                        الخطة ب                    </div>
+                        
+                            </div>
+                            <div class="row row-choose-plan row-choose-plan5">
+                                    <div class="col-sm-4 col-mobile-4 text-right">0.50</div>
+                                    <div class="col-sm-4 col-mobile-4 text-center">
+                               $500.00 - $50.00
+                                    </div>
+                                    <div class="col-sm-4 col-mobile-4 text-left">
+                                   الخطة 1
+                                    </div>
+                                </div>
+                                <div class="row row-choose-plan row-choose-plan5">
+                                        <div class="col-sm-4 col-mobile-4 text-right">0.70</div>
+                                        <div class="col-sm-4 col-mobile-4 text-center">
+                                   $2000.00 - $501.00
+                                        </div>
+                                        <div class="col-sm-4 col-mobile-4 text-left">
+                                       الخطة 2
+                                        </div>
+                                    </div>
+                                    <div class="row row-choose-plan row-choose-plan5">
+                                            <div class="col-sm-4 col-mobile-4 text-right">1.50</div>
+                                            <div class="col-sm-4 col-mobile-4 text-center">
+                                       $10000.00 - $2001.00
+                                            </div>
+                                            <div class="col-sm-4 col-mobile-4 text-left">
+                                           الخطة 3
+                                            </div>
+                                        </div>
+                                                        
+                                            </label>
+                            <a href="#id-go-to-pay"><button class="btn btn-go-down-topay">أكمل الدفع</button></a>
+
+                        </li>
+
+                        <li class="btn-pay-paypal">
+                            <p class="text-center fff-color w-100">
+
+                                <br /> <br /> كل يوم 2.00%
+
+                            </p>
+                            <input type="radio" id="a6-option" name="selector">
+                            <label for="a6-option" class="btn-choose-plan btn-choose-plan6">
+                                    <div class="row mar-bot-10 row-choose-plan row-choose-plan6">
+                
+                                            <div class="col-sm-4 col-mobile-4 text-right">الأرباح باليوم (%)</div>
+                                            <div class="col-sm-4 col-mobile-4 text-center">
+                                                المبلغ المنفق(دولار)
+                                            </div>
+                                            <div class="col-sm-4 col-mobile-4 text-left">
+                        الخطة ج                    </div>
+                        
+                            </div>
+                            <div class="row row-choose-plan row-choose-plan6">
+                                    <div class="col-sm-4 col-mobile-4 text-right">1.00</div>
+                                    <div class="col-sm-4 col-mobile-4 text-center">
+                               $5000.00 - $1500.00
+                                    </div>
+                                    <div class="col-sm-4 col-mobile-4 text-left">
+                                   الخطة 1
+                                    </div>
+                                </div>
+                                <div class="row  row-choose-plan row-choose-plan6">
+                                        <div class="col-sm-4 col-mobile-4 text-right">1.70</div>
+                                        <div class="col-sm-4 col-mobile-4 text-center">
+                                   $10000.00 - $5001.00
+                                        </div>
+                                        <div class="col-sm-4 col-mobile-4 text-left">
+                                       الخطة 2
+                                        </div>
+                                    </div>
+                                    <div class="row row-choose-plan row-choose-plan6">
+                                            <div class="col-sm-4 col-mobile-4 text-right">2.00</div>
+                                            <div class="col-sm-4 col-mobile-4 text-center">
+                                       $100000.00 - $10001.00
+                                            </div>
+                                            <div class="col-sm-4 col-mobile-4 text-left">
+                                           الخطة 3
+                                            </div>
+                                        </div>
+                                                            
+                                                </label>
+                            <a href="#id-go-to-pay"><button class="btn btn-go-down-topay">أكمل الدفع</button></a>
+
+                        </li>
+                    </ul>
+                </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="section-payment fff-color" id="id-go-to-pay">
+        <div class="container-fluid">
+            <div class="row payment-method">
+                <p>إختر طريقة الدفع المناسبة</p>
+                <br />
+                <br />
+                <div class="form-radio-payment">
+                    <form>
+                        <ul>
+                            <li class="btn-pay-paypal-coin">
+                                <input type="radio" id="a-option" name="selector">
+                                <label for="a-option" class="coin-8"><img src="img/paypal.png" alt="paypal payment" class="img-payment" width="auto" height="auto"></label>
+
+                                <div class="check"></div>
+                            </li>
+
+                            <li class="btn-pay-perfect">
+                                <input type="radio" id="b-option" name="selector">
+                                <label for="b-option" class="coin-8"><img src="img/perfect.png" alt="paypal payment" class="img-payment" width="auto" height="auto"></label>
+
+                                <div class="check">
+                                    <div class="inside"></div>
+                                </div>
+                            </li>
+
+                            <li class="btn-pay-bitcoin-cash">
+                                <input type="radio" id="c-option" name="selector">
+                                <label for="c-option" class="coin-8"><img src="img/bitcoin-cash.png" alt="paypal payment" class="img-payment" width="auto" height="auto"></label>
+
+                                <div class="check">
+                                    <div class="inside"></div>
+                                </div>
+                            </li>
+                            <li class="btn-pay-bitcoin">
+                                <input type="radio" id="d-option" name="selector">
+                                <label for="d-option" class="coin-8"><img src="img/bitcoin.png" alt="paypal payment" class="img-payment" width="auto" height="auto"></label>
+
+                                <div class="check">
+                                    <div class="inside"></div>
+                                </div>
+                            </li>
+                            <li class="btn-pay-ethereum">
+                                <input type="radio" id="f-option" name="selector">
+                                <label for="f-option" class="coin-8"><img src="img/ethereum.png" alt="paypal payment" class="img-payment" width="auto" height="auto"></label>
+
+                                <div class="check">
+                                    <div class="inside"></div>
+                                </div>
+                            </li>
+                            <li class="btn-pay-payeer">
+                                <input type="radio" id="g-option" name="selector">
+                                <label for="g-option" class="coin-8"><img src="img/payeer.png" alt="paypal payment" class="img-payment" width="auto" height="auto"></label>
+
+                                <div class="check">
+                                    <div class="inside"></div>
+                                </div>
+                            </li>
+                            <li class="btn-pay-dogecoin">
+                                <input type="radio" id="h-option" name="selector">
+                                <label for="h-option" class="coin-8"><img src="img/dogecoin.png" alt="paypal payment" class="img-payment" width="auto" height="auto"></label>
+
+                                <div class="check">
+                                    <div class="inside"></div>
+                                </div>
+                            </li>
+                            <li class="btn-pay-litecoin">
+                                <input type="radio" id="i-option" name="selector">
+                                <label for="i-option" class="coin-8"><img src="img/litecoin.png" alt="paypal payment" class="img-payment" width="auto" height="auto"></label>
+
+                                <div class="check">
+                                    <div class="inside"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+
+                <div class="pay-paypal pay-payment col-md-12 text-center display-none">
+                    <input type="button" class="text-center btn btn-confirm" value="إدفع الآن" />
+                    <br />
+                    <br />
+                    <p class="text-center">بسبب التغيرات العالمية وفرق الحوالات, ستكون نسبة العمولة على التحويل هي 1.5% نتمنى أن لا يزعجكم ذلك</p>
+                </div>
+                <div class="pay-perfect pay-payment col-md-12 text-center display-none">
+                    <input type="button" class="text-center btn btn-confirm" value="إدفع الآن" />
+                    <br />
+                    <br />
+                    <p class="text-center">بسبب التغيرات العالمية وفرق الحوالات, ستكون نسبة العمولة على التحويل هي 1.5% نتمنى أن لا يزعجكم ذلك</p>
+                    <p class="text-center">بسبب التغيرات العالمية وفرق الحوالات, ستكون نسبة العمولة على التحويل هي 1.5% نتمنى أن لا يزعجكم ذلك</p>
+
+                </div>
+                <div class="pay-bitcoin-cash pay-payment col-md-12 text-center display-none">
+                    <input type="button" class="text-center btn btn-confirm" value="إدفع الآن" />
+                    <br />
+                    <br />
+                    <p class="text-center">بسبب التغيرات العالمية وفرق الحوالات, ستكون نسبة العمولة على التحويل هي 1.5% نتمنى أن لا يزعجكم ذلك</p>
+                    <p class="text-center">بسبب التغيرات العالمية وفرق الحوالات, ستكون نسبة العمولة على التحويل هي 1.5% نتمنى أن لا يزعجكم ذلك</p>
+                    <p class="text-center">بسبب التغيرات العالمية وفرق الحوالات, ستكون نسبة العمولة على التحويل هي 1.5% نتمنى أن لا يزعجكم ذلك</p>
+
+                </div>
+                <div class="pay-bitcoin pay-payment col-md-12 text-center display-none">
+                    <input type="button" class="text-center btn btn-confirm" value="إدفع الآن" />
+                    <br />
+                    <br />
+                    <p class="text-center">بسبب التغيرات العالمية وفرق الحوالات, ستكون نسبة العمولة على التحويل هي 1.5% نتمنى أن لا يزعجكم ذلك</p>
+                    <p class="text-center">بسبب التغيرات العالمية وفرق الحوالات, ستكون نسبة العمولة على التحويل هي 1.5% نتمنى أن لا يزعجكم ذلك</p>
+                    <p class="text-center">بسبب التغيرات العالمية وفرق الحوالات, ستكون نسبة العمولة على التحويل هي 1.5% نتمنى أن لا يزعجكم ذلك</p>
+
+                </div>
+                <div class="pay-ethereum pay-payment col-md-12 text-center display-none">
+                    <input type="button" class="text-center btn btn-confirm" value="إدفع الآن" />
+                    <br />
+                    <br />
+                    <p class="text-center">بسبب التغيرات العالمية وفرق الحوالات, ستكون نسبة العمولة على التحويل هي 1.5% نتمنى أن لا يزعجكم ذلك</p>
+                </div>
+                <div class="pay-payeer pay-payment col-md-12 text-center display-none">
+                    <input type="button" class="text-center btn btn-confirm" value="إدفع الآن" />
+                    <br />
+                    <br />
+                    <p class="text-center">بسبب التغيرات العالمية وفرق الحوالات, ستكون نسبة العمولة على التحويل هي 1.5% نتمنى أن لا يزعجكم ذلك</p>
+                    <p class="text-center">بسبب التغيرات العالمية وفرق الحوالات, ستكون نسبة العمولة على التحويل هي 1.5% نتمنى أن لا يزعجكم ذلك</p>
+
+                </div>
+                <div class="pay-dogecoin pay-payment col-md-12 text-center display-none">
+                    <input type="button" class="text-center btn btn-confirm" value="إدفع الآن" />
+                    <br />
+                    <br />
+                    <p class="text-center">بسبب التغيرات العالمية وفرق الحوالات, ستكون نسبة العمولة على التحويل هي 1.5% نتمنى أن لا يزعجكم ذلك</p>
+                    <p class="text-center">بسبب التغيرات العالمية وفرق الحوالات, ستكون نسبة العمولة على التحويل هي 1.5% نتمنى أن لا يزعجكم ذلك</p>
+                    <p class="text-center">بسبب التغيرات العالمية وفرق الحوالات, ستكون نسبة العمولة على التحويل هي 1.5% نتمنى أن لا يزعجكم ذلك</p>
+
+                </div>
+                <div class="pay-litecoin pay-payment col-md-12 text-center display-none">
+                    <input type="button" class="text-center btn btn-confirm" value="إدفع الآن" />
+                    <br />
+                    <br />
+                    <p class="text-center">بسبب التغيرات العالمية وفرق الحوالات, ستكون نسبة العمولة على التحويل هي 1.5% نتمنى أن لا يزعجكم ذلك</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="before-footer">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-md-6">
+                    <div class="flot-right">
+                        <button class="btn btn-new-account">حساب جديد</button>
+                        <button class="btn  btn-new-login" onclick="togglelogin()">تسجيل الدخول</button>
+                        <br /><br />
+                        <div class="float-right">
+                            <a href="#" class="fa fa-skype icon-social for-icon-socials"></a>
+                            <a href="#" class="fa fa-facebook-square icon-social for-icon-socials"></a>
+                            <a href="#" class="fa fa-whatsapp icon-social for-icon-socials"></a>
+                            <a href="#" class="fa fa-twitter icon-social for-icon-socials"></a>
+                            <a href="#" class="fa fa-skype icon-social for-icon-socials"></a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="col-md-6 text-left">
+                    <div class="inline-block">
+                        <span class="for-number fff-color"><span class="fa fa-mobile for-mobile-icon icon-social float-left"></span><span class="float-left">+</span>4915753794188</span>
+                        <div class="for-germany-box fff-color font-myriad">
+                            <img src="img/germany-flag.png" alt="germany flag" width="auto" height="auto" class="germany-flag" /> Germany
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="login-page">
+        <div class="overlay-login" onclick="togglelogin()"></div>
+        <form>
+            <div class="form-login">
+                <p class="text-center fff-color">
+                    تسجيل الدخول
+                </p>
+                <div class="text-right">
+
+
+
+                    <label for="fname" class="fff-color label-login">اسم المستخدم</label>
+                    <br />
+                    <input type="text" id="fname" name="firstname" placeholder="..." class="input-login user-name-input" required>
+
+                    <br /> <br />
+
+                    <label for="pa55word" class="fff-color label-login">كلمة المرور</label>
+                    <br />
+                    <input type="password" id="pa55word" name="pa55word" placeholder="..." class="input-login" required>
+                    <br />
+                    <br />
+                    <br />
+                    <input class="btn btn-submit-login" type="submit" value="دخول" />
+                    <input class="btn btn-new-login btn-new-login-page" type="button" value="حساب جديد" />
+                </div>
+                <br />
+
+
+
+
+
+            </div>
+        </form>
+    </section>
+
+
+    <footer class="padding-10">
+        © 2019 Armahy. All Rights Reserved.
+    </footer>
+
+
+</body>
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+<!-- ltr -->
+<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+<script src="js/rtl/bootstrap.min.js"></script>
+<script src="js/rtl/jquery-3.3.1.min.js"></script>
+<script src="js/rtl/popper.min.js"></script>
+
+<script src="js/forjs.js"></script>
+
+
+
+
+<script src="https://unpkg.com/tilt.js@1.1.21/dest/tilt.jquery.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/wow.js"></script>
+
+
+
+<!-- countjs -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="js/jquery.countup.js"></script>
+<script src="js/countUp.js"></script>
+
+
+<script>
+    $('.counter').countUp();
+</script>
+<script>
+    $(document).ready(function() {
+        $('#scene').parallax();
+    });
+</script>
+
+<!-- //parallex mouse -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/1.1.1/jquery.parallax.min.js"></script>
+
+</html>

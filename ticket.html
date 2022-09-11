@@ -1,0 +1,408 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>arbahy</title>
+    <link rel="icon" href="img/png2.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--icon-->
+    <script src="js/countup.js"></script>
+    <script src="js/rtl/bootstrap.min.js"></script>
+    <script src="js/rtl/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- <link href="css/bootstrap-rtl.css" rel="stylesheet" /> -->
+    <link href="css/rtl/bootstrap-rtl.min.css" rel="stylesheet" />
+
+    <script>
+        window.addEventListener("load", function() {
+            var load_screen = document.getElementById("load_screen");
+            document.body.removeChild(load_screen);
+            $("html").css({
+                'overflow': 'auto'
+            });
+        });
+    </script>
+    <link href="css/animate.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body id="go-up">
+    <a href="#go-up" class="fa-go-up" id="fa-go-up">
+        <span class="fa fa-angle-up fa-go-up-span">
+
+        </span>
+    </a>
+
+    <div id="load_screen">
+        <div class="loader"></div>
+    </div>
+
+
+
+    <nav class="navbar pd-0 navbar-light navbar-expand-md bg-light justify-content-center">
+
+        <button class="navbar-toggler ml-1 collapse-mobile custom-toggler order-1 click-oncollapse" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
+                                <!-- <span class="navbar-toggler-icon"></span> -->
+                                <span class="navbar-toggler-icon-border span1-oncollapse"></span>
+                                <span class="navbar-toggler-icon-border"></span>
+                                <span class="navbar-toggler-icon-border span3-oncollapse"></span>
+                            </button>
+
+        <ul class="nav navbar-nav flex-row justify-content-center flex-nowrap order-2 ul-logo">
+            <li class="nav-item">
+                <a class="nav-link" href=""><img src="img/logo.png" alt="website logo" class="logo-site" width="auto" height="auto" /></a>
+            </li>
+        </ul>
+
+        <div class="navbar-collapse collapse justify-content-between align-items-center w-100  order-3 for-order-3" id="collapsingNavbar2">
+
+            <ul class="navbar-nav mx-auto text-center">
+
+                <li class="nav-item">
+                    <a class="nav-link hoverme" href="index.html">الرئيسية</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutus.html">من نحن</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          المساعدة
+                                        </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">عن الموقع</a>
+                        <a class="dropdown-item" href="#">استخدام الموقع</a>
+                        <!-- <div class="dropdown-divider"></div> -->
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">حسابي</a>
+                </li>
+
+
+
+            </ul>
+        </div>
+
+        <div class="order-4 for-order-4 dis-pc-inh user-log-in">
+            <span class="span-language">AR
+                            <span class="arrow-left display-none"></span>
+            <span class="languages display-none"><span class="disabled">AR</span>|<a>EN</a></span>
+            </span>
+            <button class="btn btn-new-account new-account-header">حساب جديد</button>
+            <button class="btn  btn-new-login btn-new-login-header" onclick="togglelogin()">تسجيل الدخول</button>
+
+        </div>
+        <div class="order-4 for-order-4 dis-pc-inh display-none dashboard-user-header fff-color user-log-out">
+            <span class="span-language">AR
+                            <span class="arrow-left display-none"></span>
+            <span class="languages display-none"><span class="disabled">AR</span>|<a>EN</a></span>
+            </span>
+            <div class="container-fluid">
+                <span class="fa fa-user user-icon"></span>
+                <span class="user-name">ABC EFG</span>
+                <span class="fa fa-cog sttings">
+                        <span class="arrow-logout display-none"></span>
+                <a class="logout display-none">logOut</a>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+
+    <section class="section-ticket fff-color">
+        <br />
+        <br />
+        <br />
+        <p class="text-center"> تذاكري</p>
+
+        <div class="container-fluid">
+
+
+
+            <div class="row mar-bot-10">
+
+                <div class="row-details">
+                    <div class="row pd-x-30">
+                        <div class="col-md-6 text-right width-50-per">
+                            تذكرة سيارة
+                        </div>
+                        <div class="col-md-6 text-left  width-50-per">نوع التذكرة</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mar-bot-10">
+
+                <div class="row-details">
+                    <div class="row pd-x-30">
+                        <div class="col-md-6 text-right width-50-per">
+                            400
+                        </div>
+                        <div class="col-md-6 text-left  width-50-per">رقم التذكرة</div>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <br />
+            <p class="text-center">الإحالة</p>
+
+            <div class="row">
+
+                <div class="row-details">
+                    <div class="row pd-x-30">
+                        <div class="col-md-6 text-right width-50-per fff-color">
+                            www.google.com
+                        </div>
+                        <div class="col-md-6 text-left fff-color width-50-per">رابط الإحالة</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="row">
+
+                <div class="row-details">
+                    <div class="row pd-x-30">
+                        <div class="col-md-6 text-right width-50-per">
+                            <span class="inline-block mar-left-min-10 font-16 fff-color "><span
+                                        class="counter">675</span> </span>
+
+                        </div>
+                        <div class="col-md-6 text-left fff-color width-50-per">عدد الإحالات</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="row-details">
+                    <div class="row pd-x-30">
+                        <div class="col-md-6 text-right width-50-per">
+                            <span class="inline-block mar-left-min-10 font-16 fff-color"><span
+                                        class="float-left pd-x-10"> $ </span><span class="counter">505.00</span> </span>
+
+                        </div>
+                        <div class="col-md-6 text-left fff-color width-50-per">الأرباح المستحقة من الإحالات</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="row-details">
+                    <div class="row pd-x-30">
+                        <div class="col-md-6 text-right width-50-per">
+                            <span class="inline-block mar-left-min-10 font-16 fff-color"><span
+                                        class="counter">920</span> </span>
+
+                        </div>
+                        <div class="col-md-6 text-left fff-color width-50-per">عدد الإحلات المتبقية</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="row-details">
+                    <div class="row pd-x-30">
+                        <div class="col-md-6 text-right width-50-per">
+                            <span class="inline-block mar-left-min-10 font-16 fff-color"><span
+                                        class="float-left pd-x-10"> $ </span><span class="counter">675.00</span> </span>
+
+                        </div>
+                        <div class="col-md-6 text-left fff-color width-50-per">السحب الأخير</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="row-details">
+                    <div class="row pd-x-30">
+                        <div class="col-md-6 text-right fff-color width-50-per">
+                            PayPal
+                        </div>
+                        <div class="col-md-6 text-left fff-color width-50-per">نوع عملة الإستثمار</div>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <br />
+            <p class="text-center">البيانات الشخصية</p>
+
+            <div class="row-personal">
+                <div class="row pd-x-30">
+                    <div class="col-md-4 text-right fff-color width-50-per">
+                        رقم الهوية :
+                        <div class="edit-personal-1 edit-personal-done-1">
+                            <span class="id-personal">102030405</span>
+                            <input type="button" class="btn btn-edit-personal btn-edit-personal btn-edit-id" value="تعديل" />
+                        </div>
+                        <div class="edit-personal-2 edit-personal-done-2 display-none">
+                            <input type="number" class="btn btn-edit-personal id-personal-text" placeholder="102030405" />
+                            <input type="button" class="btn btn-edit-personal btn-edit-ok" value="موافق" />
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 text-right fff-color width-50-per">
+                        رقم الجوال :
+                        <div class="edit-personal-3 edit-personal-done-1">
+                            <span class="mobile-personal">059999999</span>
+                            <input type="button" class="btn btn-edit-personal btn-edit-mobile" value="تعديل" />
+                        </div>
+                        <div class="edit-personal-4 edit-personal-done-2 display-none">
+                            <input type="number" class="btn btn-edit-personal mobile-personal-text" placeholder="059999999" />
+                            <input type="button" class="btn btn-edit-personal btn-edit-ok" value="موافق" />
+
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-right fff-color width-50-per">
+                        البريد الإلكتروني :
+                        <div class="edit-personal-5 edit-personal-done-1">
+                            <span class="email-personal">example@ab.c</span>
+                            <input type="button" class="btn btn-edit-personal btn-edit-email" value="تعديل" />
+                        </div>
+                        <div class="edit-personal-6 edit-personal-done-2 display-none">
+                            <input type="email" class="btn btn-edit-personal email-personal-text" placeholder="example@ab.c" />
+                            <input type="button" class="btn btn-edit-personal btn-edit-ok" value="موافق" />
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="before-footer">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-md-6">
+                    <div class="flot-right">
+                        <button class="btn btn-new-account">حساب جديد</button>
+                        <button class="btn  btn-new-login" onclick="togglelogin()">تسجيل الدخول</button>
+                        <br /><br />
+                        <div class="float-right">
+                            <a href="#" class="fa fa-skype icon-social for-icon-socials"></a>
+                            <a href="#" class="fa fa-facebook-square icon-social for-icon-socials"></a>
+                            <a href="#" class="fa fa-whatsapp icon-social for-icon-socials"></a>
+                            <a href="#" class="fa fa-twitter icon-social for-icon-socials"></a>
+                            <a href="#" class="fa fa-skype icon-social for-icon-socials"></a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="col-md-6 text-left">
+                    <div class="inline-block">
+                        <span class="for-number fff-color"><span class="fa fa-mobile for-mobile-icon icon-social float-left"></span><span class="float-left">+</span>4915753794188</span>
+                        <div class="for-germany-box fff-color font-myriad">
+                            <img src="img/germany-flag.png" alt="germany flag" width="auto" height="auto" class="germany-flag" /> Germany
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="login-page">
+        <div class="overlay-login" onclick="togglelogin()"></div>
+        <form>
+            <div class="form-login">
+                <p class="text-center fff-color">
+                    تسجيل الدخول
+                </p>
+                <div class="text-right">
+
+
+
+                    <label for="fname" class="fff-color label-login">اسم المستخدم</label>
+                    <br />
+                    <input type="text" id="fname" name="firstname" placeholder="..." class="input-login user-name-input" required>
+
+                    <br /> <br />
+
+                    <label for="pa55word" class="fff-color label-login">كلمة المرور</label>
+                    <br />
+                    <input type="password" id="pa55word" name="pa55word" placeholder="..." class="input-login" required>
+                    <br />
+                    <br />
+                    <br />
+                    <input class="btn btn-submit-login" type="submit" value="دخول" />
+                    <input class="btn btn-new-login btn-new-login-page" type="button" value="حساب جديد" />
+                </div>
+                <br />
+
+
+
+
+
+            </div>
+        </form>
+    </section>
+
+
+    <footer class="padding-10">
+        © 2019 Armahy. All Rights Reserved.
+    </footer>
+
+
+</body>
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+<!-- ltr -->
+<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+<script src="js/rtl/bootstrap.min.js"></script>
+<script src="js/rtl/jquery-3.3.1.min.js"></script>
+<script src="js/rtl/popper.min.js"></script>
+
+<script src="js/forjs.js"></script>
+
+
+
+
+<script src="https://unpkg.com/tilt.js@1.1.21/dest/tilt.jquery.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/wow.js"></script>
+
+
+
+<!-- countjs -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="js/jquery.countup.js"></script>
+<script src="js/countUp.js"></script>
+
+
+<script>
+    $('.counter').countUp();
+</script>
+<script>
+    $(document).ready(function() {
+        $('#scene').parallax();
+    });
+</script>
+
+<!-- //parallex mouse -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/1.1.1/jquery.parallax.min.js"></script>
+
+</html>
